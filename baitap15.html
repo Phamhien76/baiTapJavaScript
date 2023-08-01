@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai15</title>
+</head>
+
+<body>
+    <script>
+        //nhập vào só tiền gửi ngân hàng ban đầu, lãi xuất năm,số tháng gửi. Tính số tiền lãi và tiền nhận được sau thời gian gửi biết tính lãi theo lãi nhập gốc.
+        // giải
+        // nhập vào thông tin ban đầu
+        let tienGui = +prompt("Hãy nhập số tiền gửi: ");
+        let laiNam = +prompt("Hãy nhập lãi xuất năm: ");
+        let thangGui = +prompt("Hãy nhập số thang gửi: ");
+        //chuyển lãi xuất năm thành số thập phân
+        laiNam = laiNam / 100;
+
+        let tienLai = 0;
+        let tienNhanDuoc = tienGui;
+
+        for (let thang = 1; thang <= thangGui; thang++) {
+            let laiThang = tienNhanDuoc * laiNam / 12;
+            tienLai += laiThang;
+            tienGui += laiThang;
+        }
+        console.log("Sô tiền lãi sau" + thangGui + "tháng là: " + tienLai);
+        console.log("Số tiền nhận được sau " + thangGui + "tháng là: " + tienNhanDuoc);
+
+
+
+    </script>
+</body>
+
+</html>

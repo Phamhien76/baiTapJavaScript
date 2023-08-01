@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài11</title>
+</head>
+
+<body>
+    <script>
+        // nhập vào 1 số nguyên n, kiểm yta số đó có phải là số hoàn hảo hay không
+        // B1: nhập số nguyên n
+        // B2: Tính tổng S các số mà n chia hết trong khoảng (1..n-1)
+        // B3: Nếu S-n, số n là số hoàn hảo
+        let n = +prompt("Hãy nhập số nguyên: ");
+        if (n < 2) {
+            alert("Hãy nhập số nguyên dương lớn hơn 1");
+        }
+        // kiểm tra số hoàn thiện
+        // input: 1 số nguyên
+        // output: True : Là số hoàn thiện,
+        //         False: không là số hoàn thiện
+        s = 0
+        for (let i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                console.log(i);
+                s += i; //s=s+i;
+            }
+        }
+        console.log(s);
+
+        if (s = n) {
+            console.log(n, "Là số hoàn hảo");
+        } else {
+            console.log(n, "Không là số hoàn hảo");
+        }
+    </script>
+</body>
+
+</html>

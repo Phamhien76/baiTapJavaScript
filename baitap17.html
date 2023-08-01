@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai17</title>
+</head>
+
+<body>
+    <script>
+        //Nhập vào 3 số từ bàn phím, sắp xếp theo thứ tự giảm dần và in ra
+        let num1 = +prompt("nhập số thứ 1: ");
+        let num2 = +prompt("nhập số thứ 2: ");
+        let num3 = +prompt("nhập số thứ 3: ");
+
+        //sắp xếp theo thứ tự giảm dần và in ra
+        number = [num1, num2, num3];
+        soGiamDan=[];
+
+        for (let i = number.length - 1; i >=0; i--) {
+            soGiamDan += number[i];
+        }             
+        alert("chuoi dao ngươc là: "+ soGiamDan);
+
+
+    </script>
+</body>
+
+</html>

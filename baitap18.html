@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai18</title>
+</head>
+
+<body>
+    <script>
+        //  Viết chương trình lặp lại các số nguyên từ 1 đến 100. Nhưng đối với 
+        //bội số của ba in "Fizz" thay vì số, và đối với bội số của năm in 
+        //"Buzz". Đối với bội số của cả ba và năm in ra "FizzBuzz".
+
+
+        for (let num = 1; num < 101; num++) {
+            if (num % 3 == 0 && num % 5 == 0) {
+                console.log("kết quả là:FizzBuzz");
+            }
+            else if (num % 3 == 0) {
+                console.log("kết quả là:Fizz");
+            }
+            else if (num % 5 == 0) {
+                console.log("kết quả là:Buzz");
+            } else {
+                console.log("kết quả là: " + num);
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

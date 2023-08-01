@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai13</title>
+</head>
+<body>
+    <script>
+        // nhập n số nguyên dương và tính tổng các số đó. Chương trình kết thúc khi nhập vào 1 số nguyên âm.
+        //B1: nhập vào số n
+        //B2: Lấy từng chữ của số ban đầu và xây dựng số đảo ngược
+        //B3: in ra số đảo ngược
+        let n = +prompt("Hãy nhập số nguyên: ");
+        
+        if (n < 0) {
+            console.log("Chương trình kết thúc");          
+        }
+        sum=0;
+        for(let i=1; i<=n;i++){
+            sum+=i;
+        }
+        console.log("Tổng các số là: " , sum);
+    </script>
+</body>
+</html>

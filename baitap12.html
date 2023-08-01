@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai12</title>
+</head>
+
+<body>
+    <script>
+
+        //nhập vào số nguyên, in ra số đảo ngược của nó (số nguyên gồm n chữ số chưa xác định) 
+        //B1: nhập vào số n
+        //B2: Lấy từng chữ của số ban đầu và xây dựng số đảo ngược
+        //B3: in ra số đảo ngược
+        let n = +prompt("Hãy nhập số nguyên: ");
+        if (n < 1) {
+            alert("Hãy nhập số nguyên dương lớn hơn 1");
+        }
+        soDaoNguoc = 0;
+        while (n > 0) {
+            console.log("aaaa");
+            //lấy chữ số cuối cùng của n và thêm vào sô đảo ngược
+            chuSoCuoi = n % 10;
+            soDaoNguoc = soDaoNguoc * 10 + chuSoCuoi;
+            //cắt chữ số cuối cùng đi để xử lý các số tiếp theo
+            n = n; //10
+        }
+        console.log("Số đảo ngược là:" + soDaoNguoc);
+        //Khối lệnh được thực thi khi lỗi xảy ra
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai19</title>
+</head>
+<body>
+    <script>
+//Viết chương trình tìm các số Armstrong có 3 chữ số (Tổng lập phương
+// của các chữ số của nó bằng chính số đó, ví dụ: 371 là số Armstrong vì
+// 3mũ(3) + 7mũ(3) + 1mũ(3)=371) 
+
+function isArmstrongNumber(num) {
+// Chuyển số thành chuỗi để lấy các chữ số
+  const numStr = num.toString();
+// Tính tổng lập phương của các chữ số 
+let armstrongSun=0;
+for(let i=0; i<numStr.length;i++){
+    const digit=parseInt(numStr[i]);
+    armstrongSun+=digit**3;
+}
+ // Kiểm tra xem tổng lập phương có bằng số ban đầu hay không
+ return num===armstrongSun;
+}
+
+function findArmstrongNumbers() {
+    const armstrongNumbers = [];
+  for (let num = 100; num < 1000; num++) {
+    if (isArmstrongNumber(num)) {
+      armstrongNumbers.push(num);
+    }
+  }
+  return armstrongNumbers;
+}
+const result = findArmstrongNumbers();
+console.log("Các số Armstrong có 3 chữ số là:", result);
+
+    </script>
+</body>
+</html>

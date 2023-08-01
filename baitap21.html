@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bai21</title>
+</head>
+<body>
+  <script>
+   let nhienLieu=+prompt("nhập nhiên liệu từ 5000 đến 30000: ");
+   let soPhiHanh=+prompt("Nhập số lượng phi hành gia (từ 1 đến 7): ");
+
+  // Tính toán số nhiên liệu còn lại
+  let nhiemLieuConLai = nhienLieu - (100 * soPhiHanh);
+
+  // Tính toán độ cao tối đa có thể đạt được
+  let doCaoToiDa = 0;
+  for (let i = 0; i < soPhiHanh; i++) {
+    doCaoToiDa += 50;
+  }
+  console.log("Số nhiên liệu còn lại là:", nhiemLieuConLai);
+  console.log("Độ cao tối đa mà tàu con thoi có thể đạt được là:", doCaoToiDa, "km");
+  </script>
+</body>
+</html>
